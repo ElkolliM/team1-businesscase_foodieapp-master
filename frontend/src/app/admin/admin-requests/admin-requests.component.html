@@ -1,0 +1,31 @@
+<mat-drawer-container>
+    <mat-drawer mode="side" opened="true">
+        <app-sidenav></app-sidenav>
+    </mat-drawer>
+    <mat-drawer-content>
+<div class="container-fluid page">
+    <div class="pag p-5">Received restaurant requests</div>
+    <!-- <div class="page__content shadow p-3 position-relative"></div> -->
+</div>
+
+<div class="container1">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let restaurant of restaurantReq">
+                <td>{{restaurant.restaurantId}}</td>
+                <td>{{restaurant.restaurantName}}</td>
+                <td><button (click)="approveRestaurant(restaurant.restaurantId? restaurant.restaurantId:'')">Approve</button></td>
+                <td><button (click)="removeRestaurant(restaurant.restaurantId? restaurant.restaurantId:'')">Decline</button></td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+</mat-drawer-content>
+</mat-drawer-container>

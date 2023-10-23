@@ -1,0 +1,53 @@
+<app-header></app-header>
+<section class="vh-100 bg-image" style="background-image: url('https://www.eataly.ca/wp-content/uploads/2020/03/ETO_FoodApp-Photo_CenaPerDue-2021.4_OH_Long_750x500.jpg');">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+            <div class="card" style="border-radius: 15px;">
+              <div class="card-body p-5">
+                <h2 class="text-uppercase text-center mb-5">Add a restaurant</h2>
+  
+                <form [formGroup]="form1" (ngSubmit)=" addrestaurant()" >
+                  <div class="form-outline mb-4">
+                    <input formControlName="restaurantId" type="text" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example1cg">restaurant Id</label>
+                  </div> 
+                  <div class="form-outline mb-4">
+                    <input formControlName="restaurantName" type="text" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example1cg">restaurant Name</label>
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <input formControlName="restaurantLocation" type="text" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example3cg">restaurant Location</label>
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <input formControlName="restaurantCategory" type="text" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example4cg">restaurant Category</label>
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <input formControlName="restaurantImage" type="text" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example4cdg">restaurant Image</label>
+                  </div>
+  
+                 
+  
+                  <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-secondary btn-block btn-lg gradient-custom-4 text-body">Register restaurant</button>
+                  </div>
+  
+                  
+  
+                </form>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<app-footer></app-footer>

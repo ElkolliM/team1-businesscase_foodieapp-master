@@ -1,0 +1,83 @@
+<app-customer-header></app-customer-header>
+<!-- <div class="container card-0 justify-content-center mb-5 ">
+    <div class="card-body px-sm-4 px-0">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-10 col">
+                <h3 class="font-weight-bold ml-md-0 mx-auto text-center text-sm-left"> Look for your favourite restaurant ! </h3>
+                <p class="mt-md-4 ml-md-0 ml-2 text-center text-sm-left"> Entrust with heigh professionalism we are offering pixel perfect web and mobile application order best food.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center round">
+            <div class="col-lg-10 col-md-12 ">
+                <div class="card shadow-lg card-1">
+                    <div class="card-body inner-card">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-5 col-md-6 col-sm-12">
+                                <div class="form-group"><label for="restaurant-name"  >Restaurant name</label><input type="text" class="form-control" [(ngModel)]="searchText"  id="restaurant name" placeholder="Type your restaurant name"> </div>
+                                <div class="form-group"> <label for="location">Location</label> <input type="text" class="form-control" [(ngModel)]="searchText" id="location" placeholder=""> </div>
+                                <div class="form-group"> <label for="Category">Category</label> <input type="text" class="form-control" [(ngModel)]="searchText" id="location" placeholder=""> </div>
+                                <div class="form-group"> <label for="Dish-name">Dish name</label> <input type="text" class="form-control" [(ngModel)]="searchText" id="rating" placeholder=""> </div>
+                                <div class="form-group"><label for="Rating">Rating</label> <input type="text" class="form-control" [(ngModel)]="searchText" id="location" placeholder=""> </div>
+                                <div class="text-right"><button type="button" class="btn  btn-block" ><small class="font-weight-bold">search</small></button> </div>
+                            </div>
+                            <div class="col-lg-5 col-md-6 col-sm-12">
+                                <div class="row">
+                                    <ng-container *ngFor="let restaurant of restaurants | search:searchText">
+                                        <div class="card col-md-5 col-sm-10">
+                                            <img src="{{restaurant.restaurantImage}}" alt="user" width="50" class="rounded-circle">
+                                            <h5>{{restaurant.restaurantName}}</h5>
+                                            <p>{{restaurant.restaurantCategory}}</p>
+                                            <P>{{restaurant.restaurantLocation}}</P>
+                                        </div>
+                                    </ng-container>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div class="container card-0 justify-content-center mb-5 ">
+    <div class="card-body px-sm-4 px-0">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-10 col">
+                <h3 class="font-weight-bold ml-md-0 mx-auto text-center text-sm-left"> Look for your favourite restaurant ! </h3>
+                <p class="mt-md-4 ml-md-0 ml-2 text-center text-sm-left"> Entrust with high professionalism we are offering pixel perfect web and mobile application order best food.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center round">
+            <div class="col-lg-10 col-md-12 ">
+                <div class="card shadow-lg card-1">
+                    <div class="card-body inner-card">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-5 col-md-6 col-sm-12">
+                                <div class="form-group"><label for="restaurant-name"  > restaurant information</label><input type="text" class="form-control" [(ngModel)]="searchText"  id="restaurant name" placeholder="enter information of restaurant">
+                                    <button (click)="gotosearch()" class="btn btn-primary" style="width: 40%; height: 40%;">results</button>
+                                </div> </div>
+                               
+                           
+                            <div class="col-lg-5 col-md-6 col-sm-12">
+                                <div class="row">
+                                   
+                                    <ng-container *ngFor="let restaurant of restaurants | search:searchText">
+                                        <div class="card col-md-5 col-sm-10">
+                                            <img src="{{restaurant.restaurantImage}}" alt="user" width="50" class="rounded-circle">
+                                            <h5>{{restaurant.restaurantName}}</h5>
+                                            <p>{{restaurant.restaurantCategory}}</p>
+                                            <P>{{restaurant.restaurantLocation}}</P>
+                                        </div>
+                                    </ng-container>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-customer-footer></app-customer-footer>
+
+

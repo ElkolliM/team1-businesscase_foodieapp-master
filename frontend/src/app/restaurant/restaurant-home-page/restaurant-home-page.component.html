@@ -1,0 +1,48 @@
+<app-header></app-header>
+
+<div class="container card-0 justify-content-center ">
+    <div class="card-body px-sm-4 px-0" style="width: 108%;">
+        <div class="row justify-content-center round" >
+            <div class="col-lg-10 col-md-12 ">
+                <div class="card shadow-lg card-1">
+                    <div class="card-body inner-card">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-5 col-md-6 col-sm-12"style="width:120%;">
+                                <h1>Menu</h1>
+                              
+                                <div *ngFor="let dish of dishes" class="d-md-flex d-sm-block justify-content-md-between justify-content-sm-center text-center border-bottom border-2 my-2 bg-light p-2 rounded-3">
+                                    <div class="col-md-2 text-sm-center text-md-start align-self-center my-2">
+                                      <h1 class="h6">{{dish.dishName}}</h1>
+                                    </div>
+                                    <div class="col-md-2 text-sm-center text-md-start align-self-center my-2">
+                                      <a class="btn btn-outline-dark " (click)="updatedish(dish.dishId)">update</a>
+                                    </div>
+                                    <div class="col-md-2 text-sm-center text-md-start align-self-center my-2">
+                                   
+                                      <button class="btn btn-outline-dark " (click)="deletedish(dish.dishId)">delete</button>
+                                    </div>
+                                  </div>
+                                
+                            </div>
+                            <div class="col-lg-5 col-md-6 col-sm-12">
+                                <h3><small class="text-muted">add a new item to the menu</small> </h3>
+                                <form [formGroup]="form1" (ngSubmit)=" addDish()" >
+                                <div class="form-group"><label for="dish name">Dish Id</label><input  class="form-control" formControlName="dishId" type="text" placeholder="enter dish #id"> </div>
+                                <div class="form-group"><label for="dish name">Dish name</label><input  class="form-control" formControlName="dishName" type="text" placeholder="enter dish name"> </div>
+                                <div class="form-group"> <label for="dish type">Dish type</label> <input class="form-control" formControlName="dishType" type="text" placeholder="enter dish type"> </div>
+                                <div class="form-group"> <label for="inputEmail4">Dish description</label> <input  class="form-control" formControlName="dishDetails" type="text" placeholder="enter dish description"> </div>
+                                <div class="form-group"> <label for="time">Dish price</label> <input  class="form-control" formControlName="dishPrice" type="text" placeholder="enter dish price"> </div>    
+                                <div class="form-group files"><label class="my-auto">Upload Dish image </label><input  class="form-control" formControlName="dishImage" type="text" placeholder="enter dish URl"> </div>
+                                <!-- <div class="form-group files"><label class="my-auto">Upload Dish image </label> <input id="file" type="file" accept="image/*" class="form-control" /></div> -->
+                                <div class="col-lg-4 col-auto "><button type="submit" class="btn btn-primary btn-block"><small class="font-weight-bold">Add dish</small></button> </div>    
+                                </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

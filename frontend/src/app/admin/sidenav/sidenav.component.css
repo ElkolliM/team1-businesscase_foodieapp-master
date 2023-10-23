@@ -1,0 +1,43 @@
+.logo{
+    text-align: center;
+    padding: 2.6rem 1rem;
+    font-size: 2em;
+}
+
+.mat-icon{
+    vertical-align: center;
+    margin-right: 1rem;
+}
+
+.mat-divider{
+border-top-width: 2px;
+border-color: white;
+}
+
+.mat-list-item{
+    color:rgb(219, 219, 219) !important;
+    font-size: 0.8rem;
+    height: 44px !important;
+    margin-bottom: 4px;
+   
+}
+.mat-list-item-content{
+    border-radius: 5px;
+    margin: 0 8px;
+}
+
+.list-item-active{
+    color: #f2f5f7 !important;
+
+}
+
+.mat-subheader{
+    color: white;
+    font-size: 1.5em;
+    font-weight:100;
+    letter-spacing: 1px;
+}
+.button{
+    background-color: blue;
+    /* color: blue !important; */
+}

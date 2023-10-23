@@ -1,0 +1,36 @@
+.pag{
+    font-size: 1.8em;
+    text-align: center;
+    font-style: inherit;
+    align-items: center;
+    font-weight: bold;
+    color: #130d4d;
+    background: #f1f5f9;
+
+}
+.page{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+    .container{
+        margin-top: 5%;
+        margin-right: 5%;
+        margin-left: 1.5%;
+        font-size: large;
+    }
+    .host{
+        display: flex;
+        flex-direction: column;
+        height:100%
+    }
+    
+    mat-drawer{
+        width:260px;
+        background:#244186
+    }
+    
+    mat-drawer-container{
+        background-color: rgba(115, 182, 246, 0.605);
+        height: 100%;
+    }

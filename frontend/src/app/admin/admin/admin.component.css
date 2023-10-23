@@ -1,0 +1,15 @@
+.host{
+    display: flex;
+    flex-direction: column;
+    height:100%
+}
+
+mat-drawer{
+    width:260px;
+    background:#244186
+}
+
+mat-drawer-container{
+    background-color: rgba(115, 182, 246, 0.605);
+    height: 100%;
+}

@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+.header-section-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+   background-color:bisque;
+   
+}
+
+
+.main-section-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: bisque;
+    background-blend-mode: color;
+    /* background-image: url(https://www.eataly.ca/wp-content/uploads/2020/03/ETO_FoodApp-Photo_CenaPerDue-2021.4_OH_Long_750x500.jpg); */
+}
+
+
+
+.footer {
+
+    position: fixed;
+
+    left: 0;
+
+    bottom: 0;
+
+    height: 5%;
+
+    width: 100%;
+
+   background-color:bisque;
+
+    color: rgb(0, 0, 0);
+
+    text-align: center;
+
+ }
+ .bottom-section-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: bisque;
+ }
+ .Btn{
+     display: flex;
+     align-items:flex-end;
+    width: 10vw;
+    background-color:gray;
+      height:0vw ;
+     margin-bottom: 30rem;
+     text-align:center;
+     background-color: black;
+     
+ }
+ .space{
+     width: 50vw;;
+ }

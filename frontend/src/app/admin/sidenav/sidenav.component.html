@@ -1,0 +1,23 @@
+<mat-nav-list>
+    <div class="logo py-4">
+        <!-- <img src="" alt=""> -->
+        FoodieApp
+    </div> 
+    <mat-divider></mat-divider>
+    <h2 mat-subheader class="mt-2">Admin Menu</h2>
+    <button mat-list-item (click)="gotologin()"> 
+        <mat-icon>home</mat-icon>Home
+    </button>
+    <button mat-list-item (click)="gotorequests() "> 
+        <mat-icon>timer</mat-icon>Requests
+    </button>
+    <button mat-list-item (click)="gotoorders()"> 
+        <mat-icon>fastfood</mat-icon>Pending placed orders
+    </button>
+    <!-- <a mat-list-item [routerLink]="['feedbacks']" routerLinkActive="active"> 
+        <mat-icon>star</mat-icon>Feedbacks
+    </a> -->
+
+    <button mat-list-item (click)="gotologout()"> 
+        <mat-icon>exit_to_app</mat-icon>Log out
+    </button>

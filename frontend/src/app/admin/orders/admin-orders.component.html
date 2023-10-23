@@ -1,0 +1,29 @@
+<mat-drawer-container>
+    <mat-drawer mode="side" opened="true">
+        <app-sidenav></app-sidenav>
+    </mat-drawer>
+    <mat-drawer-content>
+<div class="container-fluid page">
+    <div class="pag p-5">Pending placed orders</div>
+    <!-- <div class="page__content shadow p-3 position-relative"></div> -->
+</div>
+
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Restaurant Name</th>
+                <th>Order #</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of orderList">
+                <td>{{order.restaurantName}}</td>
+                <td>{{order.orderId}}</td>                
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+</mat-drawer-content>
+</mat-drawer-container>

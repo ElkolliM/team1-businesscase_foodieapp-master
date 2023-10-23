@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div class="container my-5">
+    <div class="d-md-flex d-none justify-content-md-between justify-content-sm-center align-content-center border-bottom border-2 my-2 bg-dark text-light p-3 rounded-3">
+        <div class="col-2 text-sm-center text-md-start align-self-center">
+            <h1 class="h5 fw-bold">Order ID</h1>
+        </div>
+        <div class="col-2 align-self-center">
+            <h1 class="h5 fw-bold">Created</h1>
+        </div>
+        <div class="col-2 align-self-center">
+            <h1 class="h5 fw-bold">status</h1>
+        </div>
+        
+    </div>
+    <div  *ngFor="let order of  orders" class="d-md-flex d-sm-block justify-content-md-between justify-content-sm-center text-center border-bottom border-2 my-2 bg-light p-2 rounded-3">
+        
+        <div class="col-md-2 text-sm-center text-md-start align-self-center my-2">
+            <h1 class="h6">{{order.orderId}}</h1>
+        </div>
+        <div class="col-md-2 text-sm-center text-md-start align-self-center my-2">
+            <h1 class="h6">{{order.orderPlacedAt}}</h1>
+        </div>
+        <div ng class="col-md-2 text-sm-center text-md-start align-self-center my-2">
+            <td *ngIf="order.isnotready"><button  (click)="completed(order)">REGISTERED</button> </td>
+        <td *ngIf="!order.isnotready"><button  (click)="completed(order)">COMPLETED</button> </td>
+          
+        </div>
+        
+      
+    </div>
+    
+</div>
+<app-footer></app-footer>

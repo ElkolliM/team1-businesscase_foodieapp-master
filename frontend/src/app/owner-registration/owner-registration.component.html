@@ -1,0 +1,181 @@
+<body>
+    <header class="header-section-container">
+        <div class="brand">
+            <p>
+                <i class="material-icons"></i>FoodieApp
+            </p>
+        </div>
+        <div class="title" style="text-align: right;">Restaurant owner registration</div>
+        <button  class="btn btn-warning btn-lg ms-2" (click)="goTohome()">back to home</button>
+    </header>
+    <section class="h-100 bg-dark">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+            <div class="card card-registration my-4">
+              <div class="row g-0">
+                <div class="col-xl-6 d-none d-xl-block">
+                  <img
+                    src="https://th.bing.com/th/id/OIP.YBpT-Oa3YwXkMQDq7sXvJwHaLF?pid=ImgDet&rs=1"
+                    alt="Sample photo"
+                    class="img-fluid"
+                    style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem; height: 100%;"
+                  />
+                </div>
+                <div class="col-xl-6">
+                  <div class="card-body p-md-5 text-black">
+                    <h3 class="mb-5 text-uppercase">Restaurant owner registration</h3>
+                    <form [formGroup]="form" (ngSubmit)=" adduser()">
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <!-- <input type="text" id="form3Example1m" class="form-control form-control-lg" /> -->
+                          <input class="form-control form-control-lg" id="form3Example1m" formControlName="fname" type="text"  placeholder="Enter first name">
+                          <label class="form-label" for="form3Example1m">First name</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <!-- <input type="text" id="form3Example1n" class="form-control form-control-lg" /> -->
+                          <input class="form-control form-control-lg" id="form3Example1m" formControlName="lname" type="text"  placeholder="Enter last name">
+                          <label class="form-label" for="form3Example1n">Last name</label>
+                        </div>
+                      </div>
+                    </div>
+    
+
+    
+                    <div class="form-outline mb-4">
+                      <!-- <input type="text" id="form3Example8" class="form-control form-control-lg" /> -->
+                      <input class="form-control form-control-lg" id="form3Example1m" formControlName="address" type="text"  placeholder="Enter address">
+                      <label class="form-label" for="form3Example8">Address</label>
+                    </div>
+    
+    
+                    <div class="form-outline mb-4">
+                      <!-- <input type="text" id="form3Example9" class="form-control form-control-lg" /> -->
+                      <input class="form-control form-control-lg" id="form3Example1m" formControlName="email" type="text"  placeholder="Enter email">
+                      <label class="form-label" for="form3Example9">email</label>
+                    </div>
+    
+                    <div class="form-outline mb-4">
+                      <!-- <input type="text" id="form3Example90" class="form-control form-control-lg" /> -->
+                      <input class="form-control form-control-lg" id="form3Example1m" formControlName="password" type="text"  placeholder="Enter password">
+                      <label class="form-label" for="form3Example90">Password</label>
+                    </div>
+    
+                    <div class="form-outline mb-4">
+                      <!-- <input type="text" id="form3Example99" class="form-control form-control-lg" /> -->
+                      <input class="form-control form-control-lg" id="form3Example1m" formControlName="mobile" type="text"  placeholder="Enter mobile number">
+                      <label class="form-label" for="form3Example99">mobile number</label>
+                    </div>
+    
+    
+                    <div class="d-flex justify-content-end pt-3" style="top:70%;">
+                      <button type="submit" class="btn btn-warning btn-lg ms-2">Submit form</button>
+                    </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+   <div class="footer">
+
+        <p>&copy; copyright
+    
+        <p>
+    
+    </div>
+</body>
+<!-- <main class="main-section">
+  <section class="main-section-container">
+      <section class="user"> 
+           <p>User information</p> 
+          <form [formGroup]="form" (ngSubmit)=" adduser()" >
+              <div class="row">
+                <div class="col-25">
+                  <label>first name:</label>
+                </div>
+                <div class="col-75">
+                  <input formControlName="fname" type="text"  placeholder="Enter first name">
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-25">
+                    <label>last name:</label>
+                  </div>
+                  <div class="col-75">
+                    <input formControlName="lname" type="text"  placeholder="Enter last name">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label>email:</label>
+                  </div>
+                  <div class="col-75">
+                    <input formControlName="email" type="text"  placeholder="Enter email">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label>password:</label>
+                  </div>
+                  <div class="col-75">
+                    <input formControlName="password" type="text"  placeholder="Enter password">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label>address:</label>
+                  </div>
+                  <div class="col-75">
+                    <input formControlName="address" type="text"  placeholder="Enter address">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label> Mobile number:</label>
+                  </div>
+                  <div class="col-75">
+                    <input formControlName="mobile" type="text"  placeholder="Enter mobile number">
+                  </div>
+                </div>
+               
+        
+              <div class="row">
+                <input class="btn" style="border: 10%; color: black;" type="submit" value="register user">
+              </div>
+            </form>
+      </section>
+
+       
+    
+
+      
+  </section>
+</main> -->
+      
+  
+  <!-- <section class="bottom-section-container">
+      <section class="space">
+          
+          </section>
+          <section class="space">
+          
+          </section>
+          <section class="button">
+              <button id="Btn" style="margin-bottom: 300px;" type="submit" mat-button>Submit</button>
+              </section>
+          <section class="space">
+          
+          </section>  -->
+      
+  <!-- </section> -->
+  <!-- <section class="button">
+      <button id="Btn" style="margin-bottom: 300px;" type="submit" mat-button>Submit</button>
+      </section> -->

@@ -1,0 +1,21 @@
+.navbar{
+    background-color: rgb(88, 19, 19);
+}
+.navbar-brand{
+    color: #ffffff;
+}
+.btn {
+    padding: 15px;
+    border: 2px solid rgb(10, 2, 2);
+    border-radius: 20%;
+    margin-right: 10px;
+    height: 50px;
+    border-color: azure;
+    color: azure ;
+}
+
+.btn:hover{
+
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}

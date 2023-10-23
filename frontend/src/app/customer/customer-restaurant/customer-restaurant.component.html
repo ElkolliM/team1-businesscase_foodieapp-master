@@ -1,0 +1,52 @@
+<app-customer-header></app-customer-header>
+<div class="container">
+    <div class="bg-blue"></div>
+    <div class="row">
+        <div class="col-12 border-bottom px-4 py-2">
+            <div class="row p-0" *ngFor="let restaurant of restaurants">
+                <div class=" col-md-2 d-flex justify-content-center"> <img class="pic mb-md-0 mb-3" src="{{restaurant.restaurantImage}}" alt=""> </div>
+                <div class="col-md-10 ">
+                    <div class="d-flex justify-content-between">
+                        <p class="textmuted">{{restaurant.restaurantName}}</p>
+                        <p class="bg">+1,550order</p>
+                    </div>
+                    <p class="h-blue">{{restaurant.restaurantLocation}}</p>
+                    <p class="textmuted">{{restaurant.restaurantCategory}}</p>
+                    <div class="box d-flex justify-content-between align-items-center mt-3">  
+                        <div class="d-flex align-items-center">
+                                <div data-size="" class="progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 py-2 px-9">
+            <div class="row" *ngFor="let dish of dishes">
+                <div class="col-12">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="border-bottom py-2">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="p-blue">{{dish.dishName}}</p>
+                                    <p class="textmuted">{{dish.dishDetails}}</p>
+                                    <button class="btn btn-sm btn-danger g-2"> {{dish.dishPrice}}$ </button> 
+                                    <button class="btn btn-sm btn-success" (click) = "addtocart(dish)" > Add dish to cart </button>
+                                </div>
+                                <div class="arrow">
+                                    <img class="pic mb-md-0 mb-3" src="{{dish.dishImage}}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <p class="hide"> <button class="btn btn-primary px-1" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">
+            <p class="p-blue"><span class="fas fa-chevron-up pe-2"></span>dishes List</p>
+        </button> </p>
+    </div>
+</div>
+<!-- <app-customer-footer></app-customer-footer> -->
+<div class="footer">
+    <p>&copy; copyright<p>
+</div>

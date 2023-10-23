@@ -1,0 +1,16 @@
+.navbar{
+    background-color: rgb(88, 19, 19);
+    position: fixed;
+    left: 0;
+
+    bottom: 0;
+
+    height: 7%;
+
+    width: 100%;
+
+}
+.navbar-brand{
+    
+    color: #ffffff;
+}

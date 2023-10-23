@@ -1,0 +1,86 @@
+<mat-toolbar color="primary">
+  <div fxLayout="row reverse" fxLayoutAlign="center center">
+    <div>
+      <p>
+        <i class="material-icons" style="color:white"></i>FoodieApp
+      </p>
+    </div>
+  </div>
+</mat-toolbar>
+
+
+<section class="carousel-section">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../assets/images/Food1.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5 class="fs-1">Welcome to foodieApp</h5>
+          <button class="btn btn-primary" (click)="gotologin()">Already have an account?</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/images/food.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5 class="fs-1">Welcome to foodieApp</h5>
+          <button class="btn btn-primary" (click)="gotologin()">Already have an account?</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/images/food2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5 class="fs-1">Welcome to foodieApp</h5>
+          <button class="btn btn-primary" (click)="gotologin()">Already have an account?</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<div class="container-fluid mt-4 mb-4">
+  <div class="row">
+      <div class="col-md-6 mb-5">
+          <div class="col max-mb-20 aos-init aos-animate" data-aos="fade-up"> <a class="link" routerLink="/owner/registration" routerLinkActive="active" class="icon-box text-center" data-bg-color="#fff" style="background-color: rgb(255, 255, 255);" data-abc="true">
+                  <div class="icon"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFUWrLQNpfD36Dc1R8nk7ZTky3JMad5knIxWlZ8OVRDyfRKj8HGhY_mGUcVPv02WCAAFY&usqp=CAU" width="100"> </div>
+                  <div class="content">
+                      <h3 class="title fz-20">Become Owner</h3>
+                      <div class="desc">
+                          <p>Grow your business and reach new customers by partnering with us.</p>
+                      </div> <span >Register here <i class="fa fa-arrow-right"></i></span>
+                  </div>
+              </a> </div>
+      </div>
+    
+      <div class="col-md-6 mb-5">
+          <div class="col max-mb-20 aos-init aos-animate" data-aos="fade-up"> <a class="link" routerLink="/customer/registration" routerLinkActive="active" class="icon-box text-center" data-bg-color="#fff" style="background-color: rgb(255, 255, 255);" data-abc="true">
+                  <div class="icon"> <img src="https://pic.onlinewebfonts.com/svg/img_552555.png" width="100" alt=""> </div>
+                  <div class="content">
+                      <h3 class="title fz-20">Become customer</h3>
+                      <div class="desc">
+                          <p>Try the best food experience with our food application.</p>
+                      </div> <span >Register here <i class="fa fa-arrow-right">
+                        
+                      </i></span>
+                  </div>
+              </a> </div>
+      </div>
+  </div>
+</div>
+
+  <div class="footer">
+    <p>&copy; copyright
+    <p>
+  </div>

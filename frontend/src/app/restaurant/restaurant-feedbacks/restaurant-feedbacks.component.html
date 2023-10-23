@@ -1,0 +1,58 @@
+<div class="p-16 bg-surface-secondary">
+    <div class="row">
+      <div class="col-lg-4 mx-auto">
+        <!-- Component -->
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-center">
+              <a href="#" class="avatar avatar-xl rounded-circle">
+                <img alt="..." src="https://media-cdn.tripadvisor.com/media/photo-s/1a/18/3a/cb/restaurant-le-47.jpg" width="60%">
+              </a>
+            </div>
+            <div class="text-center my-6">
+              <!-- Title -->
+              <a href="#" class="d-block h5 mb-0">restaurant name</a>
+              <!-- categroy -->
+              <span class="d-block text-sm text-muted">restaurant category</span>
+            </div>
+            <!-- Stats -->
+            <button type="button col-4 text-center" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">give your review </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="card-body text-center">
+                    <img src=" https://i.imgur.com/d2dKtI7.png" height="100" width="100">
+                    <div class="comment-box text-center">
+                      <h4>Your feedback is important to us</h4>
+                      <div class="rating">
+                        <input type="radio" name="rating" value="5" id="5">
+                        <label for="5">☆</label>
+                        <input type="radio" name="rating" value="4" id="4">
+                        <label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3">
+                        <label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2">
+                        <label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1">
+                        <label for="1">☆</label>
+                      </div>
+                      <div class="comment-area">
+                        <textarea class="form-control" placeholder="what is your review title?" rows="2"></textarea>
+                      </div>
+                      <div class="comment-area">
+                        <textarea class="form-control" placeholder="what is your review?" rows="4"></textarea>
+                      </div>
+                      <div class="text-center mt-4">
+                        <button class="btn btn-warning send px-5">Send feedbacks <i class="fa fa-long-arrow-right ml-1"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

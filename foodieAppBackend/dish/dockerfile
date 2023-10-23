@@ -1,0 +1,4 @@
+FROM openjdk:11
+LABEL maintainer="javaguides.net"
+ADD target/dish-0.0.1-SNAPSHOT.jar dish-docker-demo.jar
+ENTRYPOINT ["java", "-jar", "dish-docker-demo.jar"]
